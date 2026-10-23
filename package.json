@@ -1,0 +1,44 @@
+{
+  "name": "akahu-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that connects NZ bank and finance accounts to AI assistants via the Akahu open-finance API",
+  "type": "module",
+  "bin": {
+    "akahu-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "akahu",
+    "new-zealand",
+    "banking",
+    "open-finance",
+    "claude"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "akahu": "^2.5.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
